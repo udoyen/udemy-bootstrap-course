@@ -1,0 +1,30 @@
+To install this theme:
+
+1) Drop the unzipped folder in your wp-content/themes/ directory
+2) Log in to your dashboard and navigate to Appearance -> Themes
+3) Activate Bootstrap to WordPress
+
+At this point, no content or any database information, users, etc. will be available.
+To help get you started, we've provided an XML file you can import easily via the WP Dashboard:
+
+4) In the Dashboard, select Tools -> Import
+5) Choose "WordPress" at the bottom of the list to install the WP Importer
+6) Follow the instructions, and upload the provided XML file
+
+In order for most of the entries to work properly, you'll need to install three plugins:
+
+- Advanced Custom Fields
+- Custom Post Types UI
+- Contact Form 7
+
+At this point, you're in the great big world of WordPress development and you may need
+to massage out any kinks, or squash any bugs you'll encounter. Please note that this theme
+is for educational purposes only and not a set-it-and-forget it software. That being said,
+Brad Hussey, or Code College is not responsible for getting your theme installed properly.
+
+Please refer to the course lectures to understand how to get your WordPress theme installed
+and up-and-running.
+
+Cheers & Happy Coding!
+
+Brad @ Code College

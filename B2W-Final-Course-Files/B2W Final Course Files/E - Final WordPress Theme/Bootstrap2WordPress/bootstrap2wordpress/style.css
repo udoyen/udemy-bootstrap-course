@@ -1,0 +1,1083 @@
+/*
+Theme Name: Bootstrap to WordPress
+Theme URI: http://underscores.me/
+Author: Brad Hussey
+Author URI: http://bradhussey.ca
+Description: A custom WordPress theme using Bootstrap.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bootstrap2wordpress
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ Bootstrap to WordPress is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Reset
+2.0 Typography
+3.0 Elements
+4.0 Forms
+5.0 Navigation
+	5.1 Links
+	5.2 Menus
+6.0 Accessibility
+7.0 Alignments
+8.0 Clearings
+9.0 Widgets
+10.0 Content
+	10.1 Posts and pages
+	10.2 Asides
+	10.3 Comments
+11.0 Infinite scroll
+12.0 Media
+	12.1 Captions
+	12.2 Galleries
+13.0 Theme Specific Styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Reset
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+
+.navbar-nav > li.current_page_item a,
+.navbar-nav > li.current_page_parent a {
+	color: white;
+}
+
+/* Small menu */
+.menu-toggle {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+
+/* Search widget */
+.widget_search .search-submit {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+10.1 Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+10.2 Asides
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+10.3 Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+11.0 Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+12.0 Media
+--------------------------------------------------------------*/
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+12.1 Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0 auto;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+/*--------------------------------------------------------------
+12.2 Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+/* --------------------------------------
+   13.0 Theme Specific Styles
+   -------------------------------------- */
+
+/* COLOUR REFERENCES
+
+Green:		#79b044
+Salmon:		#dd5638
+Blue Gray:  #3e4249
+
+*/
+
+/* === GENERAL === */
+
+body {
+	margin-top: 50px;
+	font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;
+	font-size: 16px;
+	background: url('/wp-content/themes/bootstrap2wordpress/assets/img/tile.jpg') top left repeat;
+}
+
+.logged-in .navbar-fixed-top {
+	top: 32px;
+}
+
+/* === GLOBAL === */
+
+h1,h2,h3,h4,h5,h6 {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h1 small {
+	color: white;
+}
+
+h1,h2 {
+	margin: 0 0 40px;
+}
+
+h3 {
+	margin: 20px 0;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+p {
+	margin: 0 0 15px;
+}
+
+p.lead {
+	font-weight: normal;
+}
+
+a:link, a:visited {
+	color: #dd5638;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #c9302c;
+}
+
+button, input, .btn, a.btn {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	color: white;
+}
+
+.btn {
+	font-weight: bold;
+}
+
+button.btn:focus {
+	outline: none !important;
+}
+
+.btn-danger {
+	background-color: #dd5638;
+	border-collapse: #d95131;
+}
+
+.btn-success {
+	background: #79b044;
+	border: none;
+}
+
+.btn-success:hover {
+	background: #6a9b3d;
+	border-color: #6a9b3d;
+}
+
+img {
+	max-width: 100%;
+}
+
+.modal-content {
+	background: url('/wp-content/themes/bootstrap2wordpress/assets/img/tile.jpg') top left repeat;
+}
+
+.badge.social {
+	background: #ccc;
+	font-size: 24px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	line-height: 42px;
+	margin: 0 5px 20px 0;
+	padding: 0;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	color: white;
+}
+
+.badge.social.twitter:hover {
+	background: #55acee;
+}
+
+.badge.social.facebook:hover {
+	background: #3b5998;
+}
+
+.badge.social.gplus:hover {
+	background: #db4b39;
+}
+
+blockquote {
+	padding: 0;
+	border: none;
+	font-style: italic;
+	text-align: left;
+}
+
+blockquote cite {
+	display: block;
+	color: #777;
+	margin: 15px 0 0 0;
+}
+
+blockquote:before {
+	display: none;
+}
+
+
+/* === HERO === */
+
+#hero {
+	background: url('/wp-content/themes/bootstrap2wordpress/assets/img/hero-bg.jpg') 50% 0 repeat fixed;
+	min-height: 500px;
+	padding: 40px 0;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+#hero article {
+	width: 100%;
+	text-align: center;
+}
+
+#hero .hero-text {
+	margin-top: 30px;
+}
+
+#price-timeline {
+	margin: 30px 0 60px;
+	text-align: center;
+}
+
+#price-timeline .price {
+	display: inline-block;
+	margin: 0 2% 0 0;
+	width: 30%;
+	background: #3e4249;
+	padding: 10px 20px 30px;
+	position: relative;
+	vertical-align: top;
+}
+
+#price-timeline .price.active {
+	background: #dd5638;
+}
+
+#price-timeline .price span {
+	background: #101010;
+	display: block;
+	height: 70px;
+	width: 70px;
+	text-align: center;
+	line-height: 70px;
+	font-weight: bold;
+	font-size: 24px;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	position: absolute;
+	bottom: -35px;
+	left: 50%;
+	margin-left: -35px;
+}
+
+#price-timeline h4 {
+	margin: 0 0 10px;
+}
+
+#price-timeline h4 small {
+	color: white;
+	font-weight: bold;
+	display: block;
+}
+
+
+/* ==== LAYOUT ==== */
+
+.row + .row {
+	margin-top: 20px;
+}
+
+section {
+	padding: 80px 0;
+}
+
+section.main-content {
+	padding: 40px 0;
+}
+
+.section-header {
+	text-align: center;
+}
+
+section h2 {
+	margin: 20px 0 40px;
+}
+
+section h3 {
+	margin: 30px 0 10px;
+}
+
+#primary {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.feature-image {
+	display: table;
+	width: 100%;
+}
+
+.feature-image-default {
+	background: url('/wp-content/themes/bootstrap2wordpress/assets/img/stuff-feature.jpg') no-repeat;
+	background-size: cover;
+}
+
+.feature-image-default-alt {
+	background: url('/wp-content/themes/bootstrap2wordpress/assets/img/hipster-stuff.jpg') no-repeat;
+	background-size: cover;
+}
+
+.feature-image h1 {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
+}
+
+#optin {
+	background: #3e4249;
+	padding: 20px 0;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	font-size: 1.2em;
+}
+
+#optin p {
+	margin: 7px 0 0 0;
+}
+
+#who-benefits {
+	background: white;
+}
+
+#course-features {
+	background: #3e4249;
+	color: white;
+	text-align: center;
+}
+
+#project-features {
+	text-align: center;
+}
+
+#featurette {
+	background: url('/wp-content/themes/bootstrap2wordpress/assets/img/stuff-bg.jpg') 50% 100% repeat fixed;
+	background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+#instructor {
+	background: white url('/wp-content/themes/bootstrap2wordpress/assets/img/brad-elvis.png') 90% -10px no-repeat;
+}
+
+#instructor h2 {
+	margin: 0 0 20px;
+}
+
+#instructor .num {
+	display: table;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	line-height: 24px;
+	height: 140px;
+	width: 140px;
+	text-align: center;
+	background: #dd5638;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+#instructor .num .num-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#instructor .num span {
+	display: block;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#kudos {
+	text-align: center;
+}
+
+.testimonial {
+	margin-bottom: 60px;
+}
+
+.testimonial img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+#signup {
+	text-align: center;
+	background: url('/wp-content/themes/bootstrap2wordpress/assets/img/hipster-stuff.jpg') center center repeat fixed;
+	background-size: cover;
+	color: white;
+	padding: 140px 0;
+}
+
+#signup h2 {
+	font-weight: normal;
+}
+
+#signup h2 strong {
+	border-bottom: solid 2px #dd5638;
+}
+
+#signup .btn {
+	font-size: 24px;
+}
+
+footer {
+	background: #3e4249;
+	color: white;
+	padding: 20px 0 10px;
+	font-size: 12px;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer a:link, footer a:visited {
+	color: white;
+}
+
+footer a:hover {
+	color: #dd5638;
+}
+
+footer li.signup-link a {
+	color: #dd5638;
+}
+
+footer li.signup-link a:hover {
+	font-weight: bold;
+}
+
+/* === BLOG === */
+
+.post, .widget, #comments {
+	position: relative;
+	border: solid 1px #ddd;
+	background: white;
+	margin: 0 0 40px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.post header,
+.post .post-excerpt,
+.post .post-body,
+#comments .comments-wrap {
+	padding: 20px;
+}
+
+.post header h1,
+.post header h3 {
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+	border-bottom: solid 1px #ddd;
+}
+
+.post header h1 {
+	font-size: 24px;
+}
+
+.post-image img {
+	height: auto;
+}
+
+.post-details {
+	font-size: 12px;
+	width: 90%;
+}
+
+.post-details i.fa {
+	padding-left: 10px;
+}
+
+.post-details i.fa:first-child {
+	padding: 0;
+}
+
+/* === WIDGETS === */
+
+.widget {
+	padding: 20px;
+}
+
+.widget h4 {
+	margin: 0 0 10px;
+	padding: 0 0 10px;
+	border-bottom: solid 1px #ddd;
+}
+
+.widget ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.widget ul li {
+	margin: 0 0 5px;
+}
+
+.widget ul li:hover {
+	position: relative;
+	left: 1px;
+}
+
+/* === COMMENTS === */
+
+.post-comments-badge {
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	border: none;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	background: #79b044;
+	text-align: center;
+	display: table;
+}
+
+.post-comments-badge a {
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.post-comments-badge i.fa {
+	display: block;
+	font-size: 15px;
+	padding: 0;
+	margin-bottom: 4px;
+}
+
+.post-comments-badge:hover {
+	background-color: #8bc653;
+}
+
+#comments h3 {
+	text-align: center;
+}
+
+#comments h4 {
+	font-size: 1.3em;
+}
+
+#comments ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#comments ol li {
+	background: rgba(0,0,0,0.02);
+	padding: 10px 20px;
+	margin: 10px 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: solid 1px rgba(0,0,0,0,0.03);
+}
+
+#comments ol li ol.children {
+	padding: 0;
+	list-style: none;
+	font-size: 0.96em;
+}
+
+#leave-comment {
+	margin: 40px 0 0;
+	padding: 20px 0 0;
+	border-top: solid 1px #eee;
+}
+
+/* specific WordPress comment styles */
+#comments footer {
+	background: none;
+	color: inherit;
+}
+
+#comments footer a {
+	color: inherit;
+}
+
+#comments .comment-metadata {
+	margin: 10px 0 0;
+}
+
+/* === RESOURCES === */
+
+.resource {
+	width: 31.33333333%;
+	float: left;
+	margin: 0 3% 40px 0;
+}
+
+.resource:nth-child(3n) {
+	margin-right: 0;
+}
+
+
+/* === CUSTOM ICON SPRITES === */
+
+i.ci {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background: url('/wp-content/themes/bootstrap2wordpress/assets/img/icon-sprite.png') no-repeat;
+}
+
+.ci.ci-computer			{ background-position: 0 0; }
+.ci.ci-watch			{ background-position: -40px 0; }
+.ci.ci-calendar			{ background-position: -80px 0; }
+.ci.ci-community		{ background-position: -120px 0; }
+.ci.ci-instructor		{ background-position: -160px 0; }
+.ci.ci-device			{ background-position: -200px 0; }
+
+/* === FORMS === */
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 6px 12px;
+}
+
+input[type="submit"],
+button[type="submit"] {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.33;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+	outline: none;
+	border: none;
+	background: #aaa;
+}
+
+/* ==== MEDIA QUERIES ==== */
+
+@media screen and ( max-width : 991px ) {
+	#instructor .container {
+		background: rgba(255,255,255,0.8);
+		padding: 20px;
+	}
+}
+
+/* Fix the top margin when logged in */
+@media screen and (max-width: 782px) {
+	.logged-in .navbar-fixed-top {
+		top: 46px;
+	}
+}
+
+@media screen and ( max-width : 768px ) {
+	.logo {
+		width: 50%;
+	}
+	
+	#optin p {
+		margin: 0 0 10px;
+	}
+	
+	#featurette iframe {
+		height: 240px;
+	}
+	
+	.resource {
+		width: 48%;
+		margin-right: 2%;
+		min-height: 800px;
+	}
+}
+
+/* Fix the top margin when logged in */
+@media screen and (max-width: 600px) {
+	.logged-in .navbar-fixed-top {
+		top: 42px;
+	}
+}
+
+@media screen and ( max-width : 568px ) {
+	#instructor .num {
+		height: 100px;
+		width: 100px;
+		font-size: 22px;
+	}
+	
+	#instructor .num span {
+		font-size: 16px;
+	}
+	
+	.resource {
+		width: 100%;
+		margin-right: 0;
+		min-height: 0;
+	}
+}
