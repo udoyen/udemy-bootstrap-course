@@ -40,6 +40,12 @@ h4{
   font-size: 18px;
 }
 
+button, input, .btn, a.btn{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: white;
+}
+
 .btn{
   font-weight: bold;
 }
@@ -49,6 +55,9 @@ h4{
   border-color: #d95131;
 }
 
+img{
+  max-width: 100%;
+}
 
 /* === HERO === */
 
@@ -112,8 +121,26 @@ h4{
   margin: 0 0 10px;
 }
 
-#price-timeline small{
+#price-timeline h4 small{
   color: white;
   font-weight: bold;
   display: block;
+}
+
+
+/* === LAYOUT === */
+
+#optin{
+  background: #3e4249;
+  padding: 20px 0;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 1.2em;
+}
+
+
+#optin p{
+  margin: 7px 0 0 0;
+
 }
