@@ -130,6 +130,23 @@ img{
 
 /* === LAYOUT === */
 
+
+section{
+  padding: 80px 0;
+}
+
+.section-header{
+  text-align: center;
+}
+
+section h2{
+  margin: 20px 0 40px;
+}
+
+section h3{
+  margin: 30px 0 10px;
+}
+
 #optin{
   background: #3e4249;
   padding: 20px 0;
