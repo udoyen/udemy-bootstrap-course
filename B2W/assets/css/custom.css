@@ -12,7 +12,7 @@ body{
   margin-top: 50px;
   font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;
   font-size: 16px;
-  background: url('../img/title.jpg') top left repeat;
+  background: url('../img/tile.jpg') top left repeat;
 }
 
 
@@ -160,4 +160,8 @@ section h3{
 #optin p{
   margin: 7px 0 0 0;
 
+}
+
+#who-benefits{
+  background: white;
 }
