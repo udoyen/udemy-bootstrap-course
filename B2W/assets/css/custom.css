@@ -177,6 +177,13 @@ section h3{
   text-align: center;
 }
 
+#featurette{
+  background: url('../img/stuff-bg.jpg') 50% 100% repeat fixed;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
 
 /* ==== CUSTOM ICON SPRITES === */
 
