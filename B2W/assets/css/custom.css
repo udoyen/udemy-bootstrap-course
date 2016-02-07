@@ -248,6 +248,21 @@ section h3 {
 	font-weight:normal;
 }
 
+#kudos{
+	text-align: center;
+}
+
+.testimonial{
+	margin-bottom: 60px;
+}
+
+.testimonial img{
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+}
+
+
 /* ==== CUSTOM ICON SPRITES === */
 
 i.ci {
@@ -257,26 +272,10 @@ i.ci {
 	background: url('../img/icon-sprite.png') no-repeat;
 }
 
-.ci.ci-computer {
-	background-position: 0 0;
-}
 
-.ci.ci-watch {
-	background-position: -40px 0;
-}
-
-.ci.ci-calendar {
-	background-position: -80px 0;
-}
-
-.ci.ci-community {
-	background-position: -120px 0;
-}
-
-.ci.ci-instructor {
-	background-position: -160px 0;
-}
-
-.ci.ci-device {
-	background-position: -200px 0;
-}
+.ci.ci-computer { background-position: 0 0; }
+.ci.ci-watch { background-position: -40px 0; }
+.ci.ci-calendar { background-position: -80px 0; }
+.ci.ci-community { background-position: -120px 0; }
+.ci.ci-instructor {	background-position: -160px 0; }
+.ci.ci-device {	background-position: -200px 0; }
