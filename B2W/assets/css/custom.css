@@ -185,7 +185,7 @@ section h3{
 }
 
 #instructor{
-  background: white url('../img/brad-elvis.png')
+  background: white url('../img/brad-elvis.png') 90% -10px no-repeat;
 }
 
 
