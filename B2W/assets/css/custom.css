@@ -39,6 +39,14 @@ h4 {
 	font-size: 18px;
 }
 
+p.lead{
+	font-weight:normal;
+}
+
+p{
+	margin:0 0 15px;
+}
+
 a:link, a:visited{
 	color: #dd5638;
 
@@ -207,6 +215,10 @@ blockquote:before{
 }
 
 /* === LAYOUT === */
+
+.row + .row{
+	margin-top:20px;
+}
 
 section {
 	padding: 80px 0;
@@ -379,3 +391,40 @@ i.ci {
 .ci.ci-community { background-position: -120px 0; }
 .ci.ci-instructor {	background-position: -160px 0; }
 .ci.ci-device {	background-position: -200px 0; }
+
+
+/* ========= MEDIA QUERIES ============= */
+
+@media screen and (max-width: 991px){
+	#instructor .container{
+		background: rgba(255, 255, 255, 0.8);
+		padding:20px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.logo{
+		width:50%;
+	}
+
+	#optin p{
+		margin:0 0 10px;
+	}
+
+    #featurette iframe{
+	    height:240px;
+    }
+}
+
+@media screen and (max-width: 569px){
+	#instructor .num{
+		height:100%;
+		width:100%;
+		font-size:22px;
+
+	}
+
+	#instructor .num span{
+		font-size:16px;
+	}
+}
