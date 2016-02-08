@@ -90,6 +90,26 @@ img {
 
 }
 
+
+blockquote{
+	padding:0;
+	border:none;
+	font-style: italic;
+	text-align: left;
+}
+
+blockquote cite{
+	display: block;
+	color: #777;
+	margin:15px 0 0 0;
+}
+
+blockquote:before{
+	display: none;
+
+}
+
+
 /* === HERO === */
 
 #hero {
