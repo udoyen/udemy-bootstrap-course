@@ -39,20 +39,20 @@ h4 {
 	font-size: 18px;
 }
 
-p.lead{
-	font-weight:normal;
+p.lead {
+	font-weight: normal;
 }
 
-p{
-	margin:0 0 15px;
+p {
+	margin: 0 0 15px;
 }
 
-a:link, a:visited{
+a:link, a:visited {
 	color: #dd5638;
 
 }
 
-a:hover{
+a:hover {
 	text-decoration: none;
 	color: #c9302c;
 
@@ -68,7 +68,7 @@ button, input, .btn, a.btn {
 	font-weight: bold;
 }
 
-button.btn:focus{
+button.btn:focus {
 	outline: none !important;
 }
 
@@ -77,18 +77,17 @@ button.btn:focus{
 	border-color: #d95131;
 }
 
-.btn-success{
+.btn-success {
 	background: #79b044;
-	border:none;
+	border: none;
 
 }
 
-.btn-success:hover{
+.btn-success:hover {
 	background: #6a9b3d;
 	border-color: #6a9b3d;
 
 }
-
 
 img {
 	max-width: 100%;
@@ -126,25 +125,23 @@ img {
 
 }
 
-
-blockquote{
-	padding:0;
-	border:none;
+blockquote {
+	padding: 0;
+	border: none;
 	font-style: italic;
 	text-align: left;
 }
 
-blockquote cite{
+blockquote cite {
 	display: block;
 	color: #777;
-	margin:15px 0 0 0;
+	margin: 15px 0 0 0;
 }
 
-blockquote:before{
+blockquote:before {
 	display: none;
 
 }
-
 
 /* === HERO === */
 
@@ -216,8 +213,8 @@ blockquote:before{
 
 /* === LAYOUT === */
 
-.row + .row{
-	margin-top:20px;
+.row + .row {
+	margin-top: 20px;
 }
 
 section {
@@ -234,6 +231,35 @@ section h2 {
 
 section h3 {
 	margin: 30px 0 10px;
+}
+
+#primary {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.feature-image {
+	display: table;
+	width: 100%;
+}
+
+.feature-image-default {
+	background: url('../img/stuff-feature.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.feature-image-default-alt {
+	background: url('../img/hipster-stuff.jpg') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.feature-image h1 {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: white;
 }
 
 #optin {
@@ -297,83 +323,194 @@ section h3 {
 
 }
 
-#instructor .num .num-content{
+#instructor .num .num-content {
 	display: table-cell;
 	vertical-align: middle;
 }
 
-#instructor .num span{
+#instructor .num span {
 	display: block;
-	font-size:20px;
-	font-weight:normal;
+	font-size: 20px;
+	font-weight: normal;
 }
 
-#kudos{
+#kudos {
 	text-align: center;
 }
 
-.testimonial{
+.testimonial {
 	margin-bottom: 60px;
 }
 
-.testimonial img{
-	-webkit-border-radius:50%;
-	-moz-border-radius:50%;
-	border-radius:50%;
+.testimonial img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
 }
 
-#signup{
+#signup {
 	text-align: center;
 	background: url('../img/hipster-stuff.jpg') center center repeat fixed;
-	-webkit-background-size:cover;
-	background-size:cover;
+	-webkit-background-size: cover;
+	background-size: cover;
 	color: white;
-	padding:140px 0;
+	padding: 140px 0;
 
 }
 
-#signup h2{
-	font-weight:normal;
+#signup h2 {
+	font-weight: normal;
 }
 
-#signup h2 strong{
-	border-bottom:solid 2px #dd5638;
+#signup h2 strong {
+	border-bottom: solid 2px #dd5638;
 }
 
-#signup .btn{
-	font-size:24px;
+#signup .btn {
+	font-size: 24px;
 }
 
-footer{
+footer {
 	background: #3e4249;
 	color: white;
-	padding:20px 0 10px;
-	font-size:12px;
+	padding: 20px 0 10px;
+	font-size: 12px;
 }
 
-footer p{
-	margin:0;
+footer p {
+	margin: 0;
 }
 
-footer a:link, footer a:visited{
+footer a:link, footer a:visited {
 	color: white;
 }
 
-footer a:hover{
+footer a:hover {
 	color: #dd5638;
 
 }
 
-footer li.signup-link a{
+footer li.signup-link a {
 	color: #dd5638;
 
 }
 
-footer li.signup-link a:hover{
-	font-weight:bold;
+footer li.signup-link a:hover {
+	font-weight: bold;
 }
 
+/* ======== BLOG ========= */
 
+.post, .widget {
+	position: relative;
+	border: solid 1px #ddd;
+	background: white;
+	margin: 0 0 40px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.post header,
+.post .post-excerpt {
+	padding: 20px;
+
+}
+
+.post header h1,
+.post header h3 {
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+	border-bottom: solid 1px #ddd;
+}
+
+.post header h1 {
+	font-size: 24px;
+
+}
+
+.post-image {
+	height: auto;
+
+}
+
+.post-details {
+	font-size: 12px;
+	width: 90%;
+}
+
+.post-details i.fa {
+	padding-left: 10px;
+
+}
+
+.post-details i.fa:first-child {
+	padding: 0;
+}
+
+/* ==== WIDGETS ==== */
+
+.widget{
+	padding:20px;
+}
+
+.widget h4{
+	margin:0 0 10px;
+	padding:0 0 10px;
+	border-bottom: solid 1px #ddd;
+}
+
+.widget ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+.widget ul li{
+	margin:0 0 5px;
+}
+
+.widget ul li:hover{
+	position: relative;
+	left: 1px;
+}
+
+/* ====== COMMENTS ======= */
+
+.post-comments-badge {
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	border: none;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	background: #79b044;
+	text-align: center;
+	display: table;
+
+}
+
+.post-comments-badge a {
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.post-comments-badge i.fa {
+	display: block;
+	font-size: 15px;
+	padding: 0;
+	margin-bottom: 4px;
+}
+
+.post-comments-badge:hover {
+	background-color: #8bc653;
+}
 
 /* ==== CUSTOM ICON SPRITES === */
 
@@ -384,47 +521,88 @@ i.ci {
 	background: url('../img/icon-sprite.png') no-repeat;
 }
 
+.ci.ci-computer {
+	background-position: 0 0;
+}
 
-.ci.ci-computer { background-position: 0 0; }
-.ci.ci-watch { background-position: -40px 0; }
-.ci.ci-calendar { background-position: -80px 0; }
-.ci.ci-community { background-position: -120px 0; }
-.ci.ci-instructor {	background-position: -160px 0; }
-.ci.ci-device {	background-position: -200px 0; }
+.ci.ci-watch {
+	background-position: -40px 0;
+}
+
+.ci.ci-calendar {
+	background-position: -80px 0;
+}
+
+.ci.ci-community {
+	background-position: -120px 0;
+}
+
+.ci.ci-instructor {
+	background-position: -160px 0;
+}
+
+.ci.ci-device {
+	background-position: -200px 0;
+}
 
 
+/* ==== FORMS ====== */
+
+label{
+	display: block;
+	font-weight:bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	color: #666;
+	border:1px solid #ccc;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width:100%;
+	padding: 6px 12px;
+}
 /* ========= MEDIA QUERIES ============= */
 
-@media screen and (max-width: 991px){
-	#instructor .container{
+@media screen and (max-width: 991px) {
+	#instructor .container {
 		background: rgba(255, 255, 255, 0.8);
-		padding:20px;
+		padding: 20px;
 	}
 }
 
-@media screen and (max-width: 768px){
-	.logo{
-		width:50%;
+@media screen and (max-width: 768px) {
+	.logo {
+		width: 50%;
 	}
 
-	#optin p{
-		margin:0 0 10px;
+	#optin p {
+		margin: 0 0 10px;
 	}
 
-    #featurette iframe{
-	    height:240px;
-    }
+	#featurette iframe {
+		height: 240px;
+	}
 }
 
-@media screen and (max-width: 569px){
-	#instructor .num{
-		height:100%;
-		width:100%;
-		font-size:22px;
+@media screen and (max-width: 569px) {
+	#instructor .num {
+		height: 100%;
+		width: 100%;
+		font-size: 22px;
 
 	}
 
-	#instructor .num span{
-		font-size:16px;
+	#instructor .num span {
+		font-size: 16px;
 	}
 }
