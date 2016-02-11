@@ -194,7 +194,7 @@
 						</li><!-- comment -->
                         
                         <li class="comment">
-                            <h3>Jane Smith <small>&bull; Aug 9, 2016</small></h3>
+                            <h4>Jane Smith <small>&bull; Aug 9, 2016</small></h4>
                             <div class="comment-body">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                                     Veniam ipsa explicabo itaque. Voluptates in eveniet illo ad, 
@@ -209,6 +209,25 @@
                         <form>
                            <p>Your email address will not be published. 
                                Required fields are marked <span class="required">*</span></p>
+	                        <p class="comment-form-author">
+		                        <label for="author">Name *</label>
+		                        <input type="text" name="author" id="author">
+	                        </p>
+	                        <p class="comment-form-email">
+		                        <label for="email">Email *</label>
+		                        <input type="email" name="email" id="email">
+	                        </p>
+	                        <p class="comment-form-url">
+		                        <label for="url">Website</label>
+		                        <input type="url" name="url" id="url">
+	                        </p>
+	                        <p class="comment-form-comment">
+		                        <label for="comment">comment *</label>
+		                        <textarea id="comment" cols="45" rows="8"></textarea>
+	                        </p>
+	                        <p class="form-submit">
+		                        <input type="submit" value="Submit" name="submit">
+	                        </p>
                                 
                         </form>
                     </div><!-- leave-comment -->
