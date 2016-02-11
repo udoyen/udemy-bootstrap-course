@@ -221,8 +221,8 @@ section {
 	padding: 80px 0;
 }
 
-section.main-content{
-	padding:40px 0;
+section.main-content {
+	padding: 40px 0;
 }
 
 .section-header {
@@ -418,7 +418,7 @@ footer li.signup-link a:hover {
 .post header,
 .post .post-excerpt,
 .post .post-body,
-#comments .comments-wrap{
+#comments .comments-wrap {
 	padding: 20px;
 
 }
@@ -456,27 +456,27 @@ footer li.signup-link a:hover {
 
 /* ==== WIDGETS ==== */
 
-.widget{
-	padding:20px;
+.widget {
+	padding: 20px;
 }
 
-.widget h4{
-	margin:0 0 10px;
-	padding:0 0 10px;
+.widget h4 {
+	margin: 0 0 10px;
+	padding: 0 0 10px;
 	border-bottom: solid 1px #ddd;
 }
 
-.widget ul{
+.widget ul {
 	list-style: none;
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 
-.widget ul li{
-	margin:0 0 5px;
+.widget ul li {
+	margin: 0 0 5px;
 }
 
-.widget ul li:hover{
+.widget ul li:hover {
 	position: relative;
 	left: 1px;
 }
@@ -518,39 +518,39 @@ footer li.signup-link a:hover {
 	background-color: #8bc653;
 }
 
-#comments h3{
+#comments h3 {
 	text-align: center;
 
 }
 
-#comments h4{
-	font-size:1.3em;
+#comments h4 {
+	font-size: 1.3em;
 }
 
-#comments ol{
+#comments ol {
 	list-style: none;
-	padding:0;
+	padding: 0;
 	margin: 0;
 }
 
-#comments ol li{
-	background: rgba(0,0,0,0.02);
-	padding:10px 20px;
+#comments ol li {
+	background: rgba(0, 0, 0, 0.02);
+	padding: 10px 20px;
 	margin: 10px 0;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
-	border-radius:4px;
-	border: solid 1px rgba(0,0,0,0.03);
+	border-radius: 4px;
+	border: solid 1px rgba(0, 0, 0, 0.03);
 
 }
 
-#comments ol li ol.children{
-	padding:0;
-	list-style:none;
-	font-size:0.96em;
+#comments ol li ol.children {
+	padding: 0;
+	list-style: none;
+	font-size: 0.96em;
 }
 
-#leave-comment{
+#leave-comment {
 	margin: 40px 0 0;
 	padding: 20px 0 0;
 
@@ -558,17 +558,15 @@ footer li.signup-link a:hover {
 
 /* ==== RESOURCES === */
 
-.resource{
-	width:31.33333333%;
+.resource {
+	width: 31.33333333%;
 	float: left;
-	margin:0 3% 40px 0;
+	margin: 0 3% 40px 0;
 }
 
-.resource:nth-child(3n){
-	margin-right:0;
+.resource:nth-child(3n) {
+	margin-right: 0;
 }
-
-
 
 /* ==== CUSTOM ICON SPRITES === */
 
@@ -603,12 +601,11 @@ i.ci {
 	background-position: -200px 0;
 }
 
-
 /* ==== FORMS ====== */
 
-label{
+label {
 	display: block;
-	font-weight:bold;
+	font-weight: bold;
 }
 
 input[type="text"],
@@ -618,25 +615,25 @@ input[type="password"],
 input[type="search"],
 textarea {
 	color: #666;
-	border:1px solid #ccc;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	border-radius:3px;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 	display: block;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	width:100%;
+	width: 100%;
 	padding: 6px 12px;
 }
 
 input[type="submit"],
-button[type="submit"]{
+button[type="submit"] {
 	display: inline-block;
-	margin-bottom:0;
+	margin-bottom: 0;
 	font-size: 18px;
-	font-weight:bold;
-	line-height:1.33;
+	font-weight: bold;
+	line-height: 1.33;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
@@ -646,17 +643,16 @@ button[type="submit"]{
 	-ms-user-select: none;
 	user-select: none;
 	background-image: none;
-	border:none;
-	-webkit-border-radius:6px;
-	-moz-border-radius:6px;
-	border-radius:6px;
+	border: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
 }
 
-
 input[type="submit"]:hover,
-button[type="submit"]:hover{
-	outline:none;
-	border:none;
+button[type="submit"]:hover {
+	outline: none;
+	border: none;
 	background: #aaa;
 
 }
@@ -683,11 +679,11 @@ button[type="submit"]:hover{
 		height: 240px;
 	}
 
-    .resource{
-	    width: 48%;
-	    margin-right:2%;
-	    min-height:800px;
-    }
+	.resource {
+		width: 48%;
+		margin-right: 2%;
+		min-height: 800px;
+	}
 }
 
 @media screen and (max-width: 569px) {
@@ -702,9 +698,9 @@ button[type="submit"]:hover{
 		font-size: 16px;
 	}
 
-    .resource{
-	    width: 100%;
-	    margin-right:0;
-	    min-height:0;
-    }
+	.resource {
+		width: 100%;
+		margin-right: 0;
+		min-height: 0;
+	}
 }
