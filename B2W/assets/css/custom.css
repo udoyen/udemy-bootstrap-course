@@ -221,6 +221,10 @@ section {
 	padding: 80px 0;
 }
 
+section.main-content{
+	padding:40px 0;
+}
+
 .section-header {
 	text-align: center;
 }
@@ -552,6 +556,18 @@ footer li.signup-link a:hover {
 
 }
 
+/* ==== RESOURCES === */
+
+.resource{
+	width:31.33333333%;
+	float: left;
+	margin:0 3% 40px 0;
+}
+
+.resource:nth-child(3n){
+	margin-right:0;
+}
+
 
 
 /* ==== CUSTOM ICON SPRITES === */
@@ -634,6 +650,12 @@ textarea {
 	#featurette iframe {
 		height: 240px;
 	}
+
+    .resource{
+	    width: 48%;
+	    margin-right:2%;
+	    min-height:800px;
+    }
 }
 
 @media screen and (max-width: 569px) {
@@ -647,4 +669,10 @@ textarea {
 	#instructor .num span {
 		font-size: 16px;
 	}
+
+    .resource{
+	    width: 100%;
+	    margin-right:0;
+	    min-height:0;
+    }
 }
